@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 
+// Methios to add security in the moment of the authentication
 export const verifyToken = async (req, res, next) => {
     try {
         let token = req.header("Authorization");
